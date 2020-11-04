@@ -1,4 +1,5 @@
 cmake_minimum_required (VERSION 2.8)
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread")
 
 # projectname is the same as the main-executable
 project(xflow)
@@ -6,6 +7,7 @@ project(xflow)
 add_definitions('-g')
 add_definitions('-Wall')
 add_definitions('-std=c++11')
+add_definitions('-pthread')
 
 include_directories(
   "${PROJECT_SOURCE_DIR}"
